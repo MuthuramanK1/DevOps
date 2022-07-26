@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# gettin input from the hostname_ file to connect into that file and
+# change the permission of the file
+# and Running that script file
+for name_ in `cat hostname_`
+do
+        echo " Logging into $name_ "
+        ssh devops@$name_ sudo chmod +x websetup.sh
+        ssh devops@$name_ sudo ./websetup.sh
+done
+
+
+#before this used scp websetup.sh devops@web01:
+# to send the websetup file 
+#first step.
