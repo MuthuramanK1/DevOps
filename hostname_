@@ -1,0 +1,5 @@
+web01
+web03
+
+#this is the host name file which i wanted to sent the web scripts
+#i've resolved these by changing /etc/hosts with ip address
