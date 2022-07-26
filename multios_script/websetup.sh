@@ -17,7 +17,7 @@ echo "login to server"
                 cd /tmp/webset
                 wget $PACKAGE_LINK
 #renaming the file to .zip because,
-#the file is downloading doesn't arrived at zip fromat
+#the file downloading doesn't arrived at zip format
                 sudo mv $PACKAGE_NAME $PACKAGE_NAME.zip
                 unzip $PACKAGE_NAME.zip
                 sudo cp -r $PACKAGE_NAME/* /var/www/html
